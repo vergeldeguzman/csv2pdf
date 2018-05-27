@@ -1,6 +1,8 @@
-# csv2pdf
+# csv2pdf / pdf2csv
 
-csv2pdf is a script that converts csv to pdf. 
+csv2pdf - convert csv to pdf
+
+pdf2csv - convert pdf to csv, can only converts table with inner grid and outer grid 
 
 ## Usage
 
@@ -18,12 +20,13 @@ optional arguments:
   -p PAGESIZE, --pagesize PAGESIZE
                         pagesize, valid choices are:
                         A0,A1,A2,A3,A4,A5,A6,B0,B1,B2,B3,B4,B5,B6,letter
-  ```
+```
   
 ## Requirements
 
     python 3.5
     reportlab
+    dataminer.six
 
 ## Example run
 
@@ -37,4 +40,10 @@ Convert csv file with header row to pdf file (landscape A4)
 
 ```
 python.exe csv2pdf.py -i input.csv -o output.pdf -c -l -p A4
+```
+
+Convert pdf file to csv file
+
+```
+python.exe pdf2csv.py -i input.pdf -o output.csv
 ```

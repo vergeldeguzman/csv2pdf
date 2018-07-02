@@ -105,10 +105,10 @@ def parse_arg():
     parser = argparse.ArgumentParser()
     parser.add_argument('-i', '--input-file',
                         required=True,
-                        help='input csv file')
+                        help='input pdf file')
     parser.add_argument('-o', '--output-file',
                         required=True,
-                        help='output pdf file')
+                        help='output csv file')
 
     args = parser.parse_args()
     return args

@@ -21,10 +21,22 @@ optional arguments:
                         pagesize, valid choices are:
                         A0,A1,A2,A3,A4,A5,A6,B0,B1,B2,B3,B4,B5,B6,letter
 ```
+
+```  
+usage: pdf2csv.py [-h] -i INPUT_FILE -o OUTPUT_FILE
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -i INPUT_FILE, --input-file INPUT_FILE
+                        input pdf file
+  -o OUTPUT_FILE, --output-file OUTPUT_FILE
+                        output csv file  
+  ```
   
 ## Requirements
 
     python 3.5
+    lxml
     reportlab
     dataminer.six
 
